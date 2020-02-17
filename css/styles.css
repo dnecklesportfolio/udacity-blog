@@ -7,17 +7,62 @@ body {
  font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
   color: #000000;
-  line-height: 2;
   font-size: 16px;
 }
 
+
+.container {
+width: 90%;
+max-width: 1100px; 
+margin: 0 auto;
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat (3, 300px);
+grid-template-rows: 100px 700px 40px;
+grid-template-areas: 
+"hd hd hd"
+"main main main"
+"ft ft ft";
+
+}
 header {
-  background: #333;
-  color: #999;
+  grid-area: hd;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+align-items:flex-end;
+
   font-size: 1.5em;
+  height: 100px;
+}
+
+header a { 
+  text-decoration: none;
+  font-size: .7em;
+  padding: 0px;
+}
+
+header a:hover { 
+  border-bottom: 2px solid black;
+}
+h2 {
+  flex-grow: 1;
+  font-size: .8em;
 }
 
 header, nav { 
   padding: 10px;
 }
 
+article {
+grid-area: main;
+}
+
+footer {
+  padding-top: 10px;
+  grid-area: ft;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  
+}
