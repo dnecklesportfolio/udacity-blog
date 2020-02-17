@@ -1,2 +1,2 @@
 # udacity-blog
-Homework 1 from the Front End Development Training 
+Homework 1 from Udacity's Front End Development Training. The beginning of a long but fun and fulfilling career. 
