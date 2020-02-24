@@ -1,0 +1,41 @@
+#post {
+    color: #555;
+}
+#post main {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "aside article";
+    
+}
+#post aside { 
+    grid-area: aside;
+ 
+display: flex;
+flex-direction: column;
+align-items: center;
+ 
+}
+
+.author {
+ width: 100px; 
+   
+ margin: 0;
+}
+.author img { 
+    width: 100%;
+}
+
+h3.name { color: #555;}
+p.title { color:#b1b1b1;}
+#post aside .author { 
+  clip-path: circle(50% at 50% 50%);
+}
+ 
+#post article { 
+    grid-area: article;
+background-color:lawngreen ;
+}
+
